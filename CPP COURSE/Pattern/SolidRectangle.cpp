@@ -2,18 +2,25 @@
 using namespace std;
 
 int main() {
-for(int i=0;i<3;i++)
+int row;
+int column;
+cout<<"Enter number of rows: "<<endl;
+cin>>row;
+cout<<"Enter number of columns: "<<endl;
+cin>>column;
+for(int i=0;i<row;i++)
   {
-    for (int j=0;j<5;j++)
+    for (int j=0;j<column;j++)
       {
-        cout<<"*";
+        cout<<"*"<<" ";
       }
     cout<<endl;
   }
 }
 
 
-/*Output:
+/* pattern based on input given
+Output:
 *****
 *****
 ***** */

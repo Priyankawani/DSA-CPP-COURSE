@@ -1,7 +1,7 @@
 #include <iostream>
 #include<vector>
 using namespace std;
-int frstOccurence(vector<int> arr, int target)
+int lastOccurence(vector<int> arr, int target)
 {
   int start = 0;
   int end = arr.size() - 1;
@@ -32,15 +32,15 @@ int main() {
     int target = 4;
     int size = 9;
   
-    int indexOfFirstOcc = frstOccurence(v, target);
+    int indexOfLastOcc = lastOccurence(v, target);
 
-    if(indexOfFirstOcc== -1)
+    if(indexOfLastOcc== -1)
     {
       cout<<"target not found"<<endl;
     }
   else
     {
-      cout<<"target found at "<<indexOfFirstOcc<<" index"<<endl;
+      cout<<"target found at "<<indexOfLastOcc<<" index"<<endl;
     }
     return 0;
 }

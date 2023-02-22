@@ -8,7 +8,7 @@ int main() {
   int size = 11;
   int mid = 0;
 
-  while(s<=e)
+  while(s<e)
     {
       if(arr[s]>0)
       {

@@ -15,7 +15,7 @@ int main()
 {
     int n;
     
-    cout<<"Enter the number of elements: "<<endl;
+    cout<<"Enter the number of elements: "<<" ";
     cin>>n;
 
     vector<int> arr(n);

@@ -32,6 +32,8 @@ void Intersection(int a[], int b[], int sizea, int sizeb)
             if(a[i] == b[j])
             {
                 intersection.push_back(b[j]);
+                //marking the element so that its not checked again
+                b[j] = -1;
             }
         }
     }

@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    vector<int> arr {1,0,1,1,1,0,0,1,0,1};
+    vector<int> arr {1,0,1,1,1,0,0,1,0,1,0};
 
     int s = 0;
     int e = arr.size()-1;

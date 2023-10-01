@@ -1,39 +1,36 @@
-#include <iostream>
+#include<iostream>
+#include<vector>
 using namespace std;
 
 int main() {
-  int arr[] = {0,1,1,2,1,0,2,0,2,1,0};
-  int s = 0;
-  int e = 10;
-  int size = 11;
-  int mid = 0;
+  vector<int> arr {0,1,1,2,1,0,2,0,2,1,0};
+  int l=0;
+  int m=0;
+  int h=arr.size()-1;
 
-  while(mid<=e)
+  while(m<=h)
+  {
+    if(arr[m]==0)
     {
-      if(arr[mid]==0)
-      {
-        swap(arr[mid],arr[s]);
-        s = s+1;
-        mid = mid+1;
-      }
-      else if(arr[mid]==2)
-      {
-        swap(arr[mid],arr[e]);
-        e=e-1;
-      }
-      else 
-      {
-        mid++;
-      }
+      swap(arr[m],arr[l]);
+      m++;
+      l++;
     }
+    else if(arr[m]==1)
+    {
+      m++;
+    }
+    else if(arr[m]==2)
+    {
+      swap(arr[h],arr[m]);
+      h--;
+      m++;
+    }
+  }
 
-  for(int i =0; i<size; i++)
-    {
-      cout<<arr[i]<<" ";
-    }
+  for(int value: arr)
+  {
+    cout<<value<<" ";
+  }
+
 }
-
-
-
-/*Output
-0 0 0 0 1 1 1 1 2 2 2
